@@ -1,0 +1,130 @@
+:root{
+  --my-purple: #fda403;
+  --my-pink: #e8751a;
+}
+
+html{
+  background:var(--my-purple) url(../img/restaurant.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro{
+  text-align: center;
+  margin: 4% auto;
+}
+
+h1{
+  font-size: 4em;
+  color: var(--my-purple);
+  text-shadow: -5px 1px 2px #000000;
+  margin-bottom: 1%;
+}
+
+h2{
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: -1px 1px 2px var(--my-purple);
+}
+
+h3{
+  font-size: 1.8em;
+  color: var(--my-pink);
+  margin-bottom: 50px;
+}
+
+/* nav styles */
+
+.container{
+  width: 57%;
+  margin: 50px auto;
+}
+
+.tabs {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  display: table; /* [1] */
+  table-layout: fixed; /* [2] */
+  width: 100%; /* [3] */
+}
+
+.tabs__item {
+    display: table-cell; /* [4] */
+    color: #ffffff;
+}
+
+.tabs__link {
+    display: block; /* [5] */
+}
+
+.primary-nav {
+  text-align: center;
+  border-radius: 4px;
+  overflow: hidden; /* [1] */
+  background-color: var(--my-pink);
+}
+    
+.primary-nav a {
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.primary-nav a:hover, .active{
+    background-color: var(--my-purple);
+    color: #ffffff;
+}
+
+#content{
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 5px 5px var(--my-purple);
+}
+
+
+/* content  */
+#content{
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+}
+
+#content p{
+  font-size: 1.2em;
+  margin: 10px;
+  font-family: Papyrus, fantasy; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 20px;
+}
+
+.head-img{
+  padding: 20px;
+  width: 150px;
+  height: auto;
+}
+
+.flex-display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-display img{
+  width: 29%;
+  height: 100%;
+  margin: 1%;
+}
+
+#map{
+  width: 50%;
+  height: 100%;
+  margin: 20px;
+  border: 1px solid var(--my-purple);
+}
